@@ -16,6 +16,11 @@ body {
   display: flex;
 }
 
+.title {
+  font-family: 'Domine', serif;
+  margin-bottom: 20px;
+}
+
 a {
   text-decoration: none;
   color: #afafaf;
@@ -70,6 +75,7 @@ ul {
 /* NAV MENU */
 .main-header {
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .main-header .main-menu {
@@ -81,6 +87,7 @@ ul {
   margin: 0 15px;
   color: #6a6b6c;
   font-size: 20px;
+  font-weight: bold;
   border-bottom: 4px solid trasparent;
 }
 
@@ -92,4 +99,54 @@ ul {
 .main-menu .menu > a:hover {
   color: #fc7525;
   border-bottom: none;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 640px;
+  background-image:url("../Images_Food/single-post-img3.jpg");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.text-hero {
+  position: absolute;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  padding: 60px 60px 40px;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  color: #262628;
+  background: #fff;
+  text-align: center;
+  font-family: 'Domine', serif;
+}
+
+.text-hero p {
+  margin-top: 10px;
+  color: #979c9c;  afafaf
+}
+
+.label {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #fff;
+  background: #fc7525;
+  box-shadow: 1px 1px 8px rgba(0,39,56, .2);
+  z-index: 1;
 }
