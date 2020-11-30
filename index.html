@@ -14,12 +14,11 @@
     <div id="app" class="container d-flex ">
       <!-- Header -->
       <div class="header-overall d-flex">
-        <section class="list-overall ">
+        <section class="list-overall">
           <ul class="d-flex">
             <li><a href="#">Download App <span>iOS</span></a></li>
             <li><a href="#">Advertaise with us</a></li>
           </ul>
-
         </section>
         <section class="icons-overall">
           <a href="#">
@@ -35,9 +34,28 @@
             <i class="fab fa-youtube"></i>
           </a>
         </section>
-
       </div>
-      <!-- Menu Header -->
+      <header class="main-header d-flex">
+        <div class="header-logo d-flex">
+          <img src="./Images_Food/avada-food-logo.png" alt="logo avada food">
+        </div>
+
+        <!-- Menu Header -->
+        <nav class="main-menu d-flex">
+          <ul class="menu d-flex">
+            <li v-for="mainNav_item in mainNav" class="">
+              <a href="#">
+                {{mainNav_item}}
+              </a>
+            </li>
+            <a href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </ul>
+        </nav>
+      </header>
+
+
       <!-- Hero -->
 
       <!-- Main -->
@@ -62,7 +80,7 @@
 
 
     <!-- JS -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-  <script src="./js/main.js" charset="utf-8"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <script src="./js/main.js" charset="utf-8"></script>
   </body>
 </html>

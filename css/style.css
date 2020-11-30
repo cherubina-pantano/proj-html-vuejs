@@ -21,9 +21,19 @@ a {
   color: #afafaf;
 }
 
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
 /* LAYOUT */
 .container {
   background-color: #fff;
+  flex-direction: column;
+
 }
 
 /* Header Overall */
@@ -34,10 +44,6 @@ a {
   margin: 0 auto;
   padding: 10px 0;
   font-size: 12px;
-}
-
-.list-overall ul {
-  list-style: none;
 }
 
 .list-overall li,
@@ -54,4 +60,36 @@ a {
 
 .icons-overall i {
   font-size: 14px;
+}
+
+/* Header logo */
+.header-logo {
+  margin: 10px auto;
+}
+
+/* NAV MENU */
+.main-header {
+  flex-direction: column;
+}
+
+.main-header .main-menu {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.main-menu .menu a {
+  margin: 0 15px;
+  color: #6a6b6c;
+  font-size: 20px;
+  border-bottom: 4px solid trasparent;
+}
+
+.main-menu .menu a:hover {
+  color: #fc7525;
+  border-bottom: 4px solid #fc7525;
+}
+
+.main-menu .menu > a:hover {
+  color: #fc7525;
+  border-bottom: none;
 }
