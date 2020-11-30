@@ -1,3 +1,4 @@
+/* General */
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +8,50 @@
 body {
   /* font-family: 'Domine', serif; */
   font-family: 'Noto Sans JP', sans-serif;
+  color: #afafaf;
+}
+
+/* Utilities */
+.d-flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: #afafaf;
+}
+
+/* LAYOUT */
+.container {
+  background-color: #fff;
+}
+
+/* Header Overall */
+.header-overall {
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+.list-overall ul {
+  list-style: none;
+}
+
+.list-overall li,
+.icons-overall i {
+  padding: 8px;
+}
+
+.list-overall li a span {
+  padding: 4px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #fc7525;
+}
+
+.icons-overall i {
+  font-size: 14px;
 }
