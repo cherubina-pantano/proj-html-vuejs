@@ -153,13 +153,19 @@ ul {
 
 /* MAIN */
 main {
-  position: relative;
+  /* position: relative; */
   background: #f6f7f1;
+  /* flex-direction: column;
+  flex-grow: 1; */
 }
 
 /* Section1: Foodie Journal */
+.foodie-father {
+  position: relative;
+}
+
 .foodie {
-  position: absolute;
+  /* position: absolute; */
   top: -60px;
   left: 315px;
   right: 282px;
@@ -203,9 +209,8 @@ main {
 .postImg img {
   margin: 10px 0;
   width: 265px;
-  filter: none;
-  transition: filter .3s;
 }
+
 .blogPost h4 {
   margin: 0;
   font-size: 18px;
@@ -220,28 +225,90 @@ main {
 
 .postImg {
   position: relative;
-  opacity: 1;
-  transition: opacity .5s ease;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  overflow: hidden;
+  /* opacity: 1;
+  transition: opacity .5s ease; */
 }
 
-.postImg:hover img {
-  opacity: .3;
+/* .image {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* height: 100%; */
+  width: 265px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(252, 117, 37, .3);
+  overflow: hidden;
 }
+
+.text {
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  transform: translate(-9%, -40%);
+  padding: 20px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  /* background: rgba(255, 255, 255, .8); */
+}
+
+.postImg:hover .overlay {
+  opacity: 1;
+}
+/* .postImg:hover img {
+  opacity: .3;
+} */
 
 .postImg i {
   position: absolute;
-  top: 40%;
+  top: 25%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  font-size: 45px;
+  transform: translate(-50%, -40%);
+  padding: 15px;
+  font-size: 20px;
   color: rgba(0, 0, 0, .8);
   background: rgba(255, 255, 255, .8);
   border-radius: 50%;
-  opacity: 0;
-  transition: opacity .3s;
+  /* opacity: 0;
+  transition: opacity .3s; */
 }
 
-.postImg:hover i {
+/* .postImg:hover i {
   opacity: 1;
+} */
+
+/* SECTION2: POPULAR RECIPES */
+.recipes {
+  width: 100%;
+}
+
+.box-text {
+  width: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.box-text h3 {
+  font-size: 16px;
+  margin: 15px 0;
+  text-transform: uppercase;
+  color: #39403e;
+}
+
+.box-text p {
+  font-size: 14px;
+  line-height: 25px;
 }

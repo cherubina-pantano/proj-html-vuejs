@@ -67,29 +67,48 @@
       </div>
 
       <!-- Main -->
-      <main>
-        <!-- Section1: Foodie Journal -->
-        <section class="foodie d-flex">
-          <h3>Foodie Journal</h3>
+      <main class="">
 
-          <div class="blogPost d-flex">
-            <ul class="d-flex">
-              <li v-for="lastBlogPost in lastBlogPosts">
-                <a href="#">
-                  <div class="postImg">
-                    <img :src="lastBlogPost.path" alt="">
-                    <i class="fas fa-link"></i>
-                  </div>
-                  <h4 class="title"> {{lastBlogPost.title}}</h4>
-                  <p> By {{lastBlogPost.author}} | {{lastBlogPost.data}}</p>
-                </a>
-            </li>
-            </ul>
+        <!-- Section1: Foodie Journal -->
+        <div class="foodie-father d-flex">
+          <section class="foodie d-flex">
+            <h3>Foodie Journal</h3>
+
+            <div class="blogPost d-flex">
+              <ul class="d-flex">
+                <li v-for="lastBlogPost in lastBlogPosts">
+                  <a href="#">
+                    <div class="postImg ">
+                      <img :src="lastBlogPost.path" class="image" alt="">
+                      <div class="overlay">
+                        <i class="fas fa-link"></i>
+                        <div class="text">
+                          <h4 class="title"> {{lastBlogPost.title}}</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="title"> {{lastBlogPost.title}}</h4>
+                    <p> By {{lastBlogPost.author}} | {{lastBlogPost.data}}</p>
+                  </a>
+              </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+
+        <!-- Section2: Popular Recipes -->
+        <section class="recipes d-flex">
+          <div class="box-text">
+            <h3> Popular Recipes</h3>
+            <p> Aliquam erat volutpat. Ut quis ligula a magna blandit finibus.
+              Suspendisse maximus lacus non nunc lacinia lobortis.
+            </p> 
           </div>
+
         </section>
       </main>
 
-      <!-- Section2: Popular Recipes -->
       <!-- Section3: Culinary Collection -->
       <!-- Section4: Farm to Table -->
       <!-- Section4.2: split dx/sx -->
