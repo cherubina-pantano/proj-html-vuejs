@@ -43,6 +43,7 @@ ul {
   font-size: 14px;
   border: none;
   background: #fc7525;
+  cursor: pointer;
 }
 
 /* LAYOUT */
@@ -398,7 +399,7 @@ main {
 
 .wrap-collection {
   width: 1200px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .grid-container-collection {
@@ -432,4 +433,28 @@ main {
 .label-btn:hover {
   color: #fff;
   background: #fc7525;
+}
+
+/* SECTION4: FARM TO TABLE */
+.farm-table-container {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.farm-table {
+  width: 1200px;
+  margin: 50px auto;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.farm-table> .box-text {
+  margin:0;
+  text-align: left;
+}
+
+.cta i {
+  margin-left: 5px;
 }
