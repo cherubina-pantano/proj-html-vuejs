@@ -76,7 +76,10 @@
             <ul class="d-flex">
               <li v-for="lastBlogPost in lastBlogPosts">
                 <a href="#">
-                  <img :src="lastBlogPost.path" alt="">
+                  <div class="postImg">
+                    <img :src="lastBlogPost.path" alt="">
+                    <i class="fas fa-link"></i>
+                  </div>
                   <h4 class="title"> {{lastBlogPost.title}}</h4>
                   <p> By {{lastBlogPost.author}} | {{lastBlogPost.data}}</p>
                 </a>

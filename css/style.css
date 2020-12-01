@@ -200,18 +200,48 @@ main {
   align-content: space-between;
 }
 
-.blogPost img {
+.postImg img {
   margin: 10px 0;
   width: 265px;
+  filter: none;
+  transition: filter .3s;
 }
 .blogPost h4 {
   margin: 0;
   font-size: 18px;
   line-height: 25px;
-  color: #39403e;      
+  color: #39403e;
 }
 
 .blogPost p {
   font-size: 12px;
   margin: 5px 0;
+}
+
+.postImg {
+  position: relative;
+  opacity: 1;
+  transition: opacity .5s ease;
+}
+
+.postImg:hover img {
+  opacity: .3;
+}
+
+.postImg i {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  font-size: 45px;
+  color: rgba(0, 0, 0, .8);
+  background: rgba(255, 255, 255, .8);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.postImg:hover i {
+  opacity: 1;
 }
