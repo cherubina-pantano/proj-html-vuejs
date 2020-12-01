@@ -45,6 +45,40 @@ const app = new Vue({
       './Images_Food/fi2x-6-460x295.jpg',
       './Images_Food/r-brooke-lark-96398-unsplash-min-460x295.jpg'
     ],
+    collections: [
+      {
+        path: './Images_Food/drinks-recipes.png',
+        label: 'Drinks'
+      },
+      {
+        path: './Images_Food/soups-recipes.png',
+        label: 'Soups'
+      },
+      {
+        path: './Images_Food/baking-recipes.png',
+        label: 'Bakery'
+      },
+      {
+        path: './Images_Food/dinner-recipes.png',
+        label: 'Dinner'
+      },
+      {
+        path: './Images_Food/healthy-recipes.png',
+        label: 'Healthy'
+      },
+      {
+        path: './Images_Food/staff-picks.png',
+        label: 'Staff Picks'
+      },
+      {
+        path: './Images_Food/premium-recipes.png',
+        label: 'Appetiers'
+      },
+      {
+        path: './Images_Food/quick-easy-recipes.png',
+        label: 'Quick & Easy'
+      },
+    ],
   },
   methods: {
 
