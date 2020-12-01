@@ -110,7 +110,7 @@ ul {
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .text-hero {
@@ -149,4 +149,69 @@ ul {
   background: #fc7525;
   box-shadow: 1px 1px 8px rgba(0,39,56, .2);
   z-index: 1;
+}
+
+/* MAIN */
+main {
+  position: relative;
+  background: #f6f7f1;
+}
+
+/* Section1: Foodie Journal */
+.foodie {
+  position: absolute;
+  top: -60px;
+  left: 315px;
+  right: 282px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  color: #39403e;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px rgba(0,39,56, .2);
+  flex-direction: column;
+}
+
+.foodie > h3 {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.foodie > h3::before,
+.foodie > h3::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  width: 35%;
+  height: 1px;
+  background: lightgray;
+}
+
+.foodie > h3::before {
+  left: 15px;
+}
+
+.foodie > h3::after {
+  right: 15px;
+}
+
+.blogPost {
+  justify-content: center;
+  align-content: space-between;
+}
+
+.blogPost img {
+  margin: 10px 0;
+  width: 265px;
+}
+.blogPost h4 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 25px;
+  color: #39403e;      
+}
+
+.blogPost p {
+  font-size: 12px;
+  margin: 5px 0;
 }

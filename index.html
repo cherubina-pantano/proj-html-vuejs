@@ -64,12 +64,28 @@
           </h1>
           <p>March 25, 2019</p>
         </section>
-
-
       </div>
 
       <!-- Main -->
-      <!-- Section1: Foodie Journal -->
+      <main>
+        <!-- Section1: Foodie Journal -->
+        <section class="foodie d-flex">
+          <h3>Foodie Journal</h3>
+
+          <div class="blogPost d-flex">
+            <ul class="d-flex">
+              <li v-for="lastBlogPost in lastBlogPosts">
+                <a href="#">
+                  <img :src="lastBlogPost.path" alt="">
+                  <h4 class="title"> {{lastBlogPost.title}}</h4>
+                  <p> By {{lastBlogPost.author}} | {{lastBlogPost.data}}</p>
+                </a>
+            </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
       <!-- Section2: Popular Recipes -->
       <!-- Section3: Culinary Collection -->
       <!-- Section4: Farm to Table -->
