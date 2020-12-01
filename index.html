@@ -122,11 +122,15 @@
                     LEARN MORE
                   </button>
               </div>
-
             </div>
-            <div class="slide-recipePosts">
-              <img src="" alt="">
+            <div class="imgages-recipePosts">
+              <div class="grid-container">
+                <div v-for="image in imagesFromBlog" class="grid-item">
+                  <img :src="image" alt="">
+                </div>
 
+
+              </div>
             </div>
 
           </div>

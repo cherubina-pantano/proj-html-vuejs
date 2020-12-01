@@ -35,6 +35,16 @@ const app = new Vue({
         link:'#'
       },
     ],
+    imagesFromBlog: [
+      './Images_Food/Mixed-fruits-460x295.jpg',
+      './Images_Food/r-rachel-park-366508-unsplash-min-460x295.jpg',
+      './Images_Food/r-michelle-tsang-500721-unsplash-min-460x295.jpg',
+      './Images_Food/quick-summer-drink-460x295.jpg',
+      './Images_Food/r-maarten-van-den-heuvel-400626-unsplash-min-460x295.jpg',
+      './Images_Food/perfect-cosmopolitan-460x295.jpg',
+      './Images_Food/fi2x-6-460x295.jpg',
+      './Images_Food/r-brooke-lark-96398-unsplash-min-460x295.jpg'
+    ],
   },
   methods: {
 

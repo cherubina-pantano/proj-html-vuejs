@@ -49,7 +49,6 @@ ul {
 .container {
   background-color: #fff;
   flex-direction: column;
-
 }
 
 /* Header Overall */
@@ -373,4 +372,21 @@ main {
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 20px;
+}
+
+/* Grid */
+.imgages-recipePosts {
+  flex-basis: calc(100% / 2 - 10px);
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: auto auto;
+}
+
+.grid-item {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
 }
