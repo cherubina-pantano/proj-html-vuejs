@@ -176,7 +176,7 @@ main {
 }
 
 .foodie {
-  /* position: absolute; */
+  position: absolute;
   top: -60px;
   left: 315px;
   right: 282px;
@@ -305,6 +305,7 @@ main {
 .recipes {
   width: 100%;
   flex-direction: column;
+  margin-top: 300px;
 }
 
 .box-text {
@@ -326,16 +327,24 @@ main {
 }
 
 /* Recipes post */
-.recipePosts {
+.recipePosts,
+.tablePosts  {
   justify-content: space-between;
-  align-items: center;
   width: 1200px;
   margin:0 auto;
 }
 
+.recipePosts {
+  align-items: center;
+}
+
 .recipePost {
-  flex-direction: column;
   flex-basis: calc(100% / 2 - 10px);
+}
+
+.recipePost,
+.tablePost-sx {
+  flex-direction: column;
   background: #fff;
 }
 
@@ -371,6 +380,7 @@ main {
 
 .recipeBody p {
   font-size: 16px;
+  text-align: justify;
   line-height: 30px;
   margin-bottom: 20px;
 }
@@ -449,12 +459,45 @@ main {
   flex-direction: row;
   align-items: center;
 }
+.tablePost-sx {
+  flex-basis: calc(65% - 10px);
+}
 
-.farm-table> .box-text {
-  margin:0;
+.farm-table > .box-text {
+  margin: 0;
   text-align: left;
 }
 
 .cta i {
   margin-left: 5px;
+}
+
+.farm-tablePosts .recipeBody i {
+  margin-left: 85%;
+}
+
+.farm-tablePosts .recipeBody > .btn {
+  text-transform: capitalize;
+  padding: 0;
+  color: #979c9c;
+  background: #fff;
+}
+
+.farm-tablePosts .recipeBody i:hover,
+.farm-tablePosts .recipeBody > .btn:hover {
+  color: #fc7525;
+}
+
+/* SECTION4: FARM TO TABLE -- DX*/
+.farm-tablePost-dx {
+  flex-basis: calc(35% - 10px);
+}
+
+.tablePost-dx {
+  margin-bottom: 40px;
+}
+
+.tablePost-dx,
+.tablePost-guide {
+  margin-left: 20px;
 }
