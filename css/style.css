@@ -340,13 +340,13 @@ main {
 }
 
 .recipePost {
-  flex-basis: calc(100% / 2 - 10px);
+  flex-basis: calc(50% - 10px);
+  background: #fff;
 }
 
 .recipePost,
 .tablePost-sx {
   flex-direction: column;
-  background: #fff;
 }
 
 .recipeHeader,
@@ -388,7 +388,7 @@ main {
 
 /* Grid images */
 .imgages-recipePosts {
-  flex-basis: calc(100% / 2 - 10px);
+  flex-basis: calc(50% - 10px);
 }
 
 .grid-container {
@@ -447,7 +447,7 @@ main {
 }
 
 /* SECTION4: FARM TO TABLE */
-.farm-table-container {
+.farm-to-table {
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -460,8 +460,38 @@ main {
   flex-direction: row;
   align-items: center;
 }
+
 .tablePost-sx {
   flex-basis: calc(65% - 10px);
+}
+
+.tablePost-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 40px;
+}
+
+.tablePost-grid-item1,
+.tablePost-grid-item-btn {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.tablePost-grid-item1,
+.tablePost-grid-item {
+  background: #fff;
+}
+.tablePost-grid-item {
+  text-align: center;
+}
+
+.tablePost-grid-item-btn {
+  text-align: center;
+  padding: 15px;
+  color: #6a6b6c;
+  border: 1px solid #f0eeeb;
+  background: #edede8;
+  cursor: pointer;
 }
 
 .farm-table > .box-text {
@@ -639,6 +669,7 @@ main {
 }
 
 .blogPost-Image {
+  flex-grow: 1;
   margin-right: 10px;
   max-width: 66px;
   max-height: 66px;
@@ -646,6 +677,13 @@ main {
 
 .blogPost-Image img {
   border-radius: 50%;
+  width: 66px;
+  height: 66px;
+  object-fit: cover;
+}
+
+.blogPost-title {
+  max-width: 320px;
 }
 
 .blogPost-title h5 {

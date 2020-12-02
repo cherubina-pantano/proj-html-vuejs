@@ -155,7 +155,7 @@
         </section>
 
         <!-- Section4: Farm to Table -->
-        <section class="farm-table-container d-flex">
+        <section class="farm-to-table d-flex">
           <div class="farm-table d-flex">
             <div class="box-text ">
               <h3> Farm to table</h3>
@@ -174,24 +174,37 @@
         <!-- Section4.2: split dx/sx -->
         <section class="farm-tablePosts">
           <div class="tablePosts d-flex">
-            <div class="tablePost-sx d-flex">
-              <img src="./Images_Food/single-post-img3-800x527.jpg" alt="">
-              <div class="recipeHeader">
-                <h3 class="title">Lunch Favourite with Salad, Naan And Beans</h3>
-                <p>Bakery, Featured, Healthy, Latest Recipes, Staff Picks</p>
+            <div class="tablePost-sx  tablePost-container d-flex">
+              <div class="tablePost-grid-item1">
+                <img src="./Images_Food/single-post-img3-800x527.jpg" alt="">
+                <div class="recipeHeader">
+                  <h2 class="title">Lunch Favourite with Salad, Naan And Beans</h2>
+                  <p>Bakery, Featured, Healthy, Latest Recipes, Staff Picks</p>
+                </div>
+                <div class="recipeBody">
+                    <p>Suspendisse at semper odio. Nam fringilla scelerisque tincidunt.
+                      Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                      Donec tincidunt posuere ornare. Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex.
+                      Sed porttitor, diam eget convallis volutpat, arcu tellus facilisis nulla, id dignissim orci leo id
+                    </p>
+                    <button type="button" name="button" class="btn">
+                      Read More >
+                    </button>
+                    <i class="far fa-comments"></i>
+                </div>
               </div>
-              <div class="recipeBody">
-                  <p>Suspendisse at semper odio. Nam fringilla scelerisque tincidunt.
-                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    Donec tincidunt posuere ornare. Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex.
-                    Sed porttitor, diam eget convallis volutpat, arcu tellus facilisis nulla, id dignissim orci leo id
-                  </p>
-                  <button type="button" name="button" class="btn">
-                    Read More >
-                  </button>
-                  <i class="far fa-comments"></i>
+              <div class="tablePost-grid-item"
+                  v-for="tableBlogPost in tableBlogPosts"
+              >
+                <img :src="tableBlogPost.path" alt="">
+                <div class="recipeHeader">
+                  <h3 class="title">{{ tableBlogPost.title }}</h3>
+                  <p> By {{ tableBlogPost.author }} | {{ tableBlogPost.data }}</p>
+                </div>
               </div>
-
+              <div class="tablePost-grid-item-btn">
+                LOAD MORE POSTS
+              </div>
             </div>
 
             <div class="farm-tablePost-dx">
@@ -236,21 +249,26 @@
 
                 </div>
               </div>
+
               <!-- Filter popular/recent -->
               <div class="filter-btns d-flex">
-                <button type="button" name="button" class="btns active">
+                <button type="button" name="button"
+                  :class="['btns',  activePopularOrRecent == 'popular' ? 'active' : '']"
+                  @click="showPostPopularOrRecent('popular')">
                   Popular
                 </button>
-                <button type="button" name="button" class="btns">
+                <button type="button" name="button"
+                  :class="['btns',  activePopularOrRecent == 'recent' ? 'active' : '']"
+                  @click="showPostPopularOrRecent('recent')">
                   Recent
                 </button>
                 </div>
                 <div class="filtered-posts d-flex">
                   <ul class="filtered-post-list d-flex">
-                    <li v-for="popularBlogPost in popularBlogPosts">
+                    <li v-for="popularBlogPost in postPopularOrRecent">
                       <a href="#" class="d-flex">
                         <div class="blogPost-Image">
-                          <img :src="popularBlogPost.path" alt="">
+                          <img :src="popularBlogPost.path_66x66" alt="">
                         </div>
                         <div class="blogPost-title">
                           <h5>{{popularBlogPost.title}}</h5>

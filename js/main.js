@@ -15,6 +15,7 @@ const app = new Vue({
     lastBlogPosts: [
       {
         path: './Images_Food/single-post-img3-200x132.jpg',
+        path_66x66: './Images_Food/single-post-img3-66x66.jpg',
         title: 'Food Corner: Top Japanese Restaurants for Sushi',
         author: 'admin',
         data: 'March 25th, 2019',
@@ -22,6 +23,7 @@ const app = new Vue({
       },
       {
         path: './Images_Food/fi-roundup-200x132.jpg',
+        path_66x66: './Images_Food/fi-roundup-66x66.jpg',
         title: 'Roundup: My New Favourite Recipes For Healthy Living',
         author: 'admin',
         data: 'March 25th, 2019',
@@ -29,6 +31,7 @@ const app = new Vue({
       },
       {
         path: './Images_Food/fi-toasts-200x132.jpg',
+        path_66x66: './Images_Food/fi-toasts-200x132.jpg',
         title: 'Why These Toasts with Tea are My New Favorite',
         author: 'admin',
         data: 'March 25th, 2019',
@@ -81,23 +84,84 @@ const app = new Vue({
     ],
     popularBlogPosts: [
       {
-        path: './Images_Food/single-post-img3-66x66.jpg',
+        path_66x66: './Images_Food/single-post-img3-66x66.jpg',
         title: 'Food Corner: Top Japanese Restaurants for Sushi',
         data: 'March 25th, 2019'
       },
       {
-        path: './Images_Food/singapore-featured-image-66x66.jpg',
+        path_66x66: './Images_Food/singapore-featured-image-66x66.jpg',
         title: 'City Guide: Singapore',
         data: 'February 27th, 2019'
       },
       {
-        path: './Images_Food/slide1-bg-66x66.jpg',
+        path_66x66: './Images_Food/slide1-bg-66x66.jpg',
         title: '6 Nutritional Tips to Help Burn Body Fat',
         data: 'February 28th, 2019'
       },
     ],
+    postPopularOrRecent: [],
+    activePopularOrRecent: 'popular',
+    tableBlogPosts: [
+      {
+        path: './Images_Food/Yogurt-Nan-800x527.jpg',
+        title: 'Food Corner: Top Japanese Restaurants for Sushi',
+        author: 'admin',
+        data: 'March 25th, 2019',
+        link:'#'
+      },
+      {
+        path: './Images_Food/Yogurt-Nan-800x527.jpg',
+        title: 'Roundup: My New Favourite Recipes For Healthy Living',
+        author: 'admin',
+        data: 'March 25th, 2019',
+        link:'#'
+      },
+      {
+        path: './Images_Food/Yogurt-Nan-800x527.jpg',
+        title: 'Why These Toasts with Tea are My New Favorite',
+        author: 'admin',
+        data: 'March 25th, 2019',
+        link:'#'
+      },
+      {
+        path: './Images_Food/Yogurt-Nan-800x527.jpg',
+        title: 'Food Corner: Top Japanese Restaurants for Sushi',
+        author: 'admin',
+        data: 'March 25th, 2019',
+        link:'#'
+      },
+      {
+        path: './Images_Food/Yogurt-Nan-800x527.jpg',
+        title: 'Roundup: My New Favourite Recipes For Healthy Living',
+        author: 'admin',
+        data: 'March 25th, 2019',
+        link:'#'
+      },
+      {
+        path: './Images_Food/Yogurt-Nan-800x527.jpg',
+        title: 'Why These Toasts with Tea are My New Favorite',
+        author: 'admin',
+        data: 'March 25th, 2019',
+        link:'#'
+      },
+      
+    ],
+  },
+
+  created: function() {
+    this.postPopularOrRecent = this.popularBlogPosts;
   },
   methods: {
+    // per visualizzare lista: popular post o recent post
+    showPostPopularOrRecent(clickChoose) {
+      if(clickChoose == 'popular') {
+        this.postPopularOrRecent = this.popularBlogPosts;
+        this.activePopularOrRecent = 'popular';
+        return;
+      }
+      this.postPopularOrRecent = this.lastBlogPosts;
+      this.activePopularOrRecent = 'recent';
+    }
 
   }, // fine methods
 });
