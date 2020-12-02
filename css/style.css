@@ -494,10 +494,55 @@ main {
 }
 
 .tablePost-dx {
+  min-height: 515px;
   margin-bottom: 40px;
+  background-image: url('../Images_Food/ad-bg.jpg');
+  position: relative;
 }
 
 .tablePost-dx,
 .tablePost-guide {
   margin-left: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tablePost-text-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+  text-align: center;
+  line-height: 48px;
+  color: #39403e;
+  text-transform: uppercase;
+}
+
+.tablePost-guide {
+  min-height: 255px;
+  background-image: url('../Images_Food/singapore-featured-image-800x527.jpg');
+  position: relative;
+}
+
+.tablePost-guide-title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 14px 26px;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  background: rgba(0, 0, 0, .8);
+}
+
+.tablePost-guide > .btn {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+}
+
+.tablePost-guide > .btn i {
+  margin-right: 8px;
 }
