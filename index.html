@@ -90,7 +90,7 @@
                     <h4 class="title"> {{lastBlogPost.title}}</h4>
                     <p> By {{lastBlogPost.author}} | {{lastBlogPost.data}}</p>
                   </a>
-              </li>
+                </li>
               </ul>
             </div>
           </section>
@@ -191,11 +191,14 @@
                   </button>
                   <i class="far fa-comments"></i>
               </div>
+
             </div>
+
             <div class="farm-tablePost-dx">
               <div class="tablePost-dx">
                 <h3 class="tablePost-text-center">View our latest recipes</h3>
               </div>
+              <!-- Guide -->
               <div class="tablePost-guide">
                 <div class="tablePost-guide-title">
                   <span>City guide: Singapore</span>
@@ -204,8 +207,63 @@
                   <i class="fas fa-globe-americas"></i>
                   View all city guides
                 </button>
-
               </div>
+              <!-- Search -->
+              <div class="input-search">
+                <i class="fas fa-search"></i>
+                <input type="text" name="search" value=""
+                  placeholder="Search...">
+              </div>
+              <!-- Follow social -->
+              <div class="follow-icons">
+                <h4 class="title">Follow Us</h4>
+                <div class="icons-social">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-pinterest-p"></i>
+                  </a>
+
+                </div>
+              </div>
+              <!-- Filter popular/recent -->
+              <div class="filter-btns d-flex">
+                <button type="button" name="button" class="btns active">
+                  Popular
+                </button>
+                <button type="button" name="button" class="btns">
+                  Recent
+                </button>
+                </div>
+                <div class="filtered-posts d-flex">
+                  <ul class="filtered-post-list d-flex">
+                    <li v-for="popularBlogPost in popularBlogPosts">
+                      <a href="#" class="d-flex">
+                        <div class="blogPost-Image">
+                          <img :src="popularBlogPost.path" alt="">
+                        </div>
+                        <div class="blogPost-title">
+                          <h5>{{popularBlogPost.title}}</h5>
+                          <p>{{popularBlogPost.data}}</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+
+
+
 
 
             </div>

@@ -79,6 +79,23 @@ const app = new Vue({
         label: 'Quick & Easy'
       },
     ],
+    popularBlogPosts: [
+      {
+        path: './Images_Food/single-post-img3-66x66.jpg',
+        title: 'Food Corner: Top Japanese Restaurants for Sushi',
+        data: 'March 25th, 2019'
+      },
+      {
+        path: './Images_Food/singapore-featured-image-66x66.jpg',
+        title: 'City Guide: Singapore',
+        data: 'February 27th, 2019'
+      },
+      {
+        path: './Images_Food/slide1-bg-66x66.jpg',
+        title: '6 Nutritional Tips to Help Burn Body Fat',
+        data: 'February 28th, 2019'
+      },
+    ],
   },
   methods: {
 

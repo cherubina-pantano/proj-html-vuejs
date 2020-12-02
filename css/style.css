@@ -168,6 +168,7 @@ main {
   background: #f6f7f1;
   /* flex-direction: column;
   flex-grow: 1; */
+  min-height: 100vh;
 }
 
 /* Section1: Foodie Journal */
@@ -524,6 +525,7 @@ main {
   min-height: 255px;
   background-image: url('../Images_Food/singapore-featured-image-800x527.jpg');
   position: relative;
+  margin-bottom: 120px;
 }
 
 .tablePost-guide-title {
@@ -545,4 +547,114 @@ main {
 
 .tablePost-guide > .btn i {
   margin-right: 8px;
+}
+
+.tablePost-guide::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: lightgray;
+}
+
+/* Input search dx */
+.input-search {
+  width: 392px;
+  padding: 10px;
+  margin: 20px 0px 40px 20px;
+  vertical-align: middle;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.input-search input {
+  margin-left: 10px;
+  border: none;
+}
+
+.input-search i {
+  padding-left: 10px;
+}
+
+/* Fallow icons */
+.follow-icons {
+  width: 100%;
+  margin: 20px 0px 20px 20px;
+}
+
+.follow-icons h4 {
+  color: #fc7525;
+}
+
+.icons-social i {
+  width: 35px;
+  padding: 8px;
+  margin: 0 5px;
+  text-align: center;
+  color: #6a6b6c;
+  border: 1px solid #f0eeeb;
+  border-radius:  8px;
+  background: radial-gradient(#edede8, transparent);
+}
+
+/* Filter popular/recent */
+.filter-btns {
+  justify-content: space-between;
+  margin: 20px 0px 40px 20px;
+  border: 1px solid #f0eeeb;
+  border-radius: 5px;
+}
+
+.btns {
+  width: 50%;
+  padding: 12px;
+  color: #39403e;
+  font-family: 'Domine', serif;
+  border: none;
+  background: #f6f7f1;
+  cursor: pointer;
+}
+
+.btns.active {
+  background: #fff;
+}
+
+.filtered-posts {
+  margin: 20px 0px 40px 20px;
+}
+
+.filtered-post-list {
+  flex-direction: column;
+}
+
+.filtered-post-list li {
+  margin-bottom: 15px;
+}
+
+.filtered-post-list a {
+  align-items: center;
+}
+
+.blogPost-Image {
+  margin-right: 10px;
+  max-width: 66px;
+  max-height: 66px;
+}
+
+.blogPost-Image img {
+  border-radius: 50%;
+}
+
+.blogPost-title h5 {
+  font-size: 14px;
+  font-weight: lighter;
+  color: #6a6b6c;
+}
+
+.blogPost-title p {
+  margin: 5px 0;
+  font-size: 12px;
 }
