@@ -126,7 +126,7 @@ ul {
 
 .text-hero {
   position: absolute;
-  width: 500px;
+  width: 30%;
   top: 50%;
   left: 50%;
   padding: 60px 60px 40px;
@@ -172,11 +172,13 @@ main {
 }
 
 /* Section1: Foodie Journal */
-.foodie-father {
+/* .foodie-father  */
+.foodie-journal{
   position: relative;
 }
 
-.foodie {
+/* .foodie */
+.foodie-journal-container {
   position: absolute;
   top: -60px;
   left: 315px;
@@ -190,13 +192,16 @@ main {
   flex-direction: column;
 }
 
-.foodie > h3 {
+/* .foodie > h3 */
+.foodie-journal-container  > h3 {
   position: relative;
   text-transform: uppercase;
 }
 
-.foodie > h3::before,
-.foodie > h3::after {
+/* .foodie > h3::before */
+/* .foodie > h3::after */
+.foodie-journal-container > h3::before,
+.foodie-journal-container > h3::after {
   content: "";
   position: absolute;
   top: 15px;
@@ -205,11 +210,13 @@ main {
   background: lightgray;
 }
 
-.foodie > h3::before {
+/* .foodie > h3::before  */
+.foodie-journal-container > h3::before {
   left: 15px;
 }
 
-.foodie > h3::after {
+/* .foodie > h3::after  */
+.foodie-journal-container > h3::after {
   right: 15px;
 }
 
@@ -218,10 +225,10 @@ main {
   align-content: space-between;
 }
 
-.postImg img {
+/* .postImg img {
   margin: 10px 0;
   width: 265px;
-}
+} */
 
 .blogPost h4 {
   margin: 0;
@@ -237,19 +244,26 @@ main {
 
 .postImg {
   position: relative;
-  display: flex;
   justify-content: center;
   align-content: space-between;
-  overflow: hidden;
-  /* opacity: 1;
-  transition: opacity .5s ease; */
+  max-width: 265px;
 }
 
-/* .image {
+.container-overlay {
+  display: inline-flex;
+  width: 100%;
+  max-width: 265px;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity .5s ease;
+}
+
+.container-overlay img.image-overlay {
   display: block;
+  max-width: 400px;
   width: 100%;
   height: auto;
-} */
+}
 
 .overlay {
   position: absolute;
@@ -257,32 +271,40 @@ main {
   bottom: 0;
   left: 0;
   right: 0;
-  /* height: 100%; */
-  width: 265px;
+  height: 100%;
+  width: 100%;
+  /* max-width: 265px; */
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(252, 117, 37, .3);
+  background: rgb(252, 117, 37);
+  background: linear-gradient(180deg, rgba(252, 117, 37, .2) 0%,
+              rgba(252,117,37, .7) 35%);
+  /* background-color: rgba(252, 117, 37, .3); */
   overflow: hidden;
 }
 
-.text {
+.text-overlay {
   position: absolute;
   top: 65%;
   left: 10%;
   transform: translate(-9%, -40%);
-  padding: 20px;
-  font-size: 20px;
+  padding: 10px;
+  font-size: 10px;
   color: #fff;
   text-align: center;
   /* background: rgba(255, 255, 255, .8); */
 }
 
-.postImg:hover .overlay {
+.overlay .text-overlay h4.title-overlay {
+  font-size: 14px;
+  color: #fff;
+  font-family: 'Domine', serif;
+}
+
+.postImg:hover .overlay,
+.container-overlay:hover .overlay {
   opacity: 1;
 }
-/* .postImg:hover img {
-  opacity: .3;
-} */
 
 .postImg i {
   position: absolute;
@@ -290,7 +312,7 @@ main {
   left: 50%;
   transform: translate(-50%, -40%);
   padding: 15px;
-  font-size: 20px;
+  font-size: 10px;
   color: rgba(0, 0, 0, .8);
   background: rgba(255, 255, 255, .8);
   border-radius: 50%;
@@ -342,11 +364,17 @@ main {
 .recipePost {
   flex-basis: calc(50% - 10px);
   background: #fff;
+  max-width: 590px;
+  position: relative;
 }
 
 .recipePost,
 .tablePost-sx {
   flex-direction: column;
+}
+
+.recipePost img.image-overlay {
+  max-width: 590px;
 }
 
 .recipeHeader,
@@ -374,7 +402,7 @@ main {
   position: absolute;
   top: 15px;
   left: 15px;
-  width: 90%;
+  width: 95%;
   height: 1px;
   background: lightgray;
 }
