@@ -503,6 +503,10 @@ main {
   margin-left: 5px;
 }
 
+.farm-tablePosts {
+  margin-bottom: 70px;
+}
+
 .farm-tablePosts .recipeBody i {
   margin-left: 85%;
 }
@@ -773,4 +777,60 @@ main {
 .theme-icons img {
   margin: 10px 10px 5px 0px;
   width: 18px;
+}
+
+/* SECTION 5 */
+.subscrive-hero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+  background-image:url("../Images_Food/subscribe-sec-bg.png");
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-width: 0px;
+  border-color: rgb(234, 233, 233);
+  border-style: solid;
+  overflow: hidden;
+}
+
+.subscrive-hero-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.subscrive-hero-text h2 {
+  font-size: 30px;
+}
+
+.subscrive-hero-text h2 > span {
+  color: #fc7525;
+}
+
+.subscrive-hero-text  p {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.subscrive-hero-text  p,
+.subscrive-hero-input {
+  margin-bottom: 20px;
+
+}
+
+.subscrive-hero-input input {
+  width: 400px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: rgb(234, 233, 233);
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.subscrive-hero-box .small{
+  font-size: 10px;
 }
