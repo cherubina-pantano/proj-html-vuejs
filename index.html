@@ -67,11 +67,10 @@
       </div>
 
       <!-- Main -->
-      <main class="">
+      <main class="main-content">
 
         <!-- Section1: Foodie Journal -->
         <section class="foodie-journal">
-
           <div class="foodie-journal-container">
               <h3>Foodie Journal</h3>
             <div class="foodie-blogPost">
@@ -95,36 +94,9 @@
                 </ul>
               </div>
             </div>
-
           </div>
 
         </section>
-        <!-- <div class="foodie-father d-flex">
-          <section class="foodie d-flex">
-            <h3>Foodie Journal</h3>
-
-            <div class="blogPost d-flex">
-              <ul class="d-flex">
-                <li v-for="lastBlogPost in lastBlogPosts">
-                  <a href="#">
-                    <div class="postImg ">
-                      <img :src="lastBlogPost.path" class="image" alt="">
-                      <div class="overlay">
-                        <i class="fas fa-link"></i>
-                        <div class="text">
-                          <h4 class="title"> {{lastBlogPost.title}}</h4>
-                        </div>
-                      </div>
-                    </div>
-                    <h4 class="title"> {{lastBlogPost.title}}</h4>
-                    <p> By {{lastBlogPost.author}} | {{lastBlogPost.data}}</p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </section>
-        </div> -->
-
 
         <!-- Section2: Popular Recipes -->
         <section class="recipes d-flex">
@@ -135,15 +107,18 @@
             </p>
           </div>
           <div class="recipePosts d-flex">
-            <div class="recipePost d-flex container-overlay">
-              
-              <img src="./Images_Food/Yogurt-Nan-800x527.jpg" class="image-overlay"alt="">
-              <div class="overlay">
-                <i class="fas fa-link"></i>
-                <div class="text-overlay">
-                  <h4 class="title-overlay"> Lunch Favourite with Salad, Naan And Beans</h4>
+            <div class="recipePost d-flex ">
+              <div class="recipePost-container-overlay container-overlay">
+                <img src="./Images_Food/Yogurt-Nan-800x527.jpg" class="image-overlay"alt="">
+                <div class="overlay">
+                  <i class="fas fa-link"></i>
+                  <div class="text-overlay">
+                    <h4 class=" recipeTextOver title-overlay"> Lunch Favourite with Salad, Naan And Beans</h4>
+                  </div>
                 </div>
               </div>
+
+
               <div class="recipeHeader">
                 <h3 class="title">Lunch Favourite with Salad, Naan And Beans</h3>
                 <p>Bakery, Featured, Healthy, Latest Recipes, Staff Picks</p>
@@ -355,7 +330,6 @@
         </section>
         <!-- Section5: Subscribe & Receive -->
         <section class="subscrive-hero">
-          <!-- <img src="./Images_Food/subscribe-sec-bg.png" alt=""> -->
           <div class="subscrive-hero-box">
             <div class="subscrive-hero-text">
               <h2 class="title">Subscribe <span>&</span> Receive A Free eBook</h2>

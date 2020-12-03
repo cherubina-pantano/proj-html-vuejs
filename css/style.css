@@ -163,21 +163,16 @@ ul {
 }
 
 /* MAIN */
-main {
-  /* position: relative; */
+.main-content {
   background: #f6f7f1;
-  /* flex-direction: column;
-  flex-grow: 1; */
   min-height: 100vh;
 }
 
 /* Section1: Foodie Journal */
-/* .foodie-father  */
 .foodie-journal{
   position: relative;
 }
 
-/* .foodie */
 .foodie-journal-container {
   position: absolute;
   top: -60px;
@@ -192,14 +187,11 @@ main {
   flex-direction: column;
 }
 
-/* .foodie > h3 */
 .foodie-journal-container  > h3 {
   position: relative;
   text-transform: uppercase;
 }
 
-/* .foodie > h3::before */
-/* .foodie > h3::after */
 .foodie-journal-container > h3::before,
 .foodie-journal-container > h3::after {
   content: "";
@@ -210,12 +202,10 @@ main {
   background: lightgray;
 }
 
-/* .foodie > h3::before  */
 .foodie-journal-container > h3::before {
   left: 15px;
 }
 
-/* .foodie > h3::after  */
 .foodie-journal-container > h3::after {
   right: 15px;
 }
@@ -224,11 +214,6 @@ main {
   justify-content: center;
   align-content: space-between;
 }
-
-/* .postImg img {
-  margin: 10px 0;
-  width: 265px;
-} */
 
 .blogPost h4 {
   margin: 0;
@@ -273,13 +258,11 @@ main {
   right: 0;
   height: 100%;
   width: 100%;
-  /* max-width: 265px; */
   opacity: 0;
   transition: .5s ease;
   background: rgb(252, 117, 37);
   background: linear-gradient(180deg, rgba(252, 117, 37, .2) 0%,
               rgba(252,117,37, .7) 35%);
-  /* background-color: rgba(252, 117, 37, .3); */
   overflow: hidden;
 }
 
@@ -292,10 +275,9 @@ main {
   font-size: 10px;
   color: #fff;
   text-align: center;
-  /* background: rgba(255, 255, 255, .8); */
 }
 
-.overlay .text-overlay h4.title-overlay {
+.text-overlay h4.title-overlay {
   font-size: 14px;
   color: #fff;
   font-family: 'Domine', serif;
@@ -320,9 +302,6 @@ main {
   transition: opacity .3s; */
 }
 
-/* .postImg:hover i {
-  opacity: 1;
-} */
 
 /* SECTION2: POPULAR RECIPES */
 .recipes {
@@ -364,8 +343,8 @@ main {
 .recipePost {
   flex-basis: calc(50% - 10px);
   background: #fff;
-  max-width: 590px;
-  position: relative;
+  /* max-width: 590px;
+  position: relative; */
 }
 
 .recipePost,
@@ -373,6 +352,34 @@ main {
   flex-direction: column;
 }
 
+.recipePost-container-overlay {
+  max-width: 590px;
+  position: relative;
+}
+
+.recipePost-container-overlay .text-overlay {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.recipePost-container-overlay h4.recipeTextOver {
+  font-size: 21px;
+  line-height: 30px;
+  padding-top: 50px;
+}
+.recipePost-container-overlay .overlay i {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, .8);
+  background: rgba(255, 255, 255, .8);
+  border-radius: 50%;
+}
 .recipePost img.image-overlay {
   max-width: 590px;
 }
