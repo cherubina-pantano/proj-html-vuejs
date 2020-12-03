@@ -12,6 +12,7 @@ const app = new Vue({
       'About',
       'Contact'
     ],
+    navFooter: [],
     lastBlogPosts: [
       {
         path: './Images_Food/single-post-img3-200x132.jpg',
@@ -150,6 +151,9 @@ const app = new Vue({
 
   created: function() {
     this.postPopularOrRecent = this.popularBlogPosts;
+    
+    // per visualizzare menu Footer
+    this.navFooter = this.mainNav.slice(1);
   },
   methods: {
     // per visualizzare lista: popular post o recent post
@@ -161,9 +165,11 @@ const app = new Vue({
       }
       this.postPopularOrRecent = this.lastBlogPosts;
       this.activePopularOrRecent = 'recent';
-    }
+    },
 
-  
+
+
+
 
   }, // fine methods
 });

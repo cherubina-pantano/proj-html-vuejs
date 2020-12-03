@@ -834,12 +834,20 @@ main {
 .subscrive-hero-box .small{
   font-size: 10px;
 }
-
+/* Section6: Foto  */
+.slider-photos {
+  width: 100%;
+  background: #fff;
+}
+.slider-photo {
+  width: 25%;
+}
 /* Footer */
 .main-footer {
   width: 100%;
   background: #fff;
   border: 1px solid rgb(234, 233, 233);
+  border-top: none;
 }
 
 .footer-container {
@@ -880,6 +888,10 @@ main {
   font-size: 14px;
   line-height: 30px;
   color: #39403e;
+}
+
+.foo-nav li a:hover {
+  color: #fc7525;
 }
 
 /* Footer contact */
