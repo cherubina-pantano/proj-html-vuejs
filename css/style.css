@@ -834,3 +834,71 @@ main {
 .subscrive-hero-box .small{
   font-size: 10px;
 }
+
+/* Footer */
+.main-footer {
+  width: 100%;
+  background: #fff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+.footer-container > div {
+  width: 25%;
+  border-right: 1px dashed lightgray;
+  /* border: 3px solid red; */
+}
+
+.footer-container div:last-child {
+  border-right: none;
+}
+/* Footer logo */
+.footer-logo,
+.footer-nav,
+.footer-contact,
+.footer-getapp {
+  padding: 30px;
+}
+
+.footer-logo .footer-icons {
+  margin-top: 20px;
+}
+
+.footer-logo .footer-icons i {
+  padding: 8px;
+  font-size: 12px;
+  /* color: #39403e; */
+}
+
+/* Footer Nav */
+.foo-nav li a {
+  font-size: 14px;
+  line-height: 30px;
+  color: #39403e;
+}
+
+/* Footer contact */
+.footer-title {
+  color: #fc7525;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.footer-contact-info {
+  display: inline-flex;
+  align-items: baseline;
+  margin-bottom: 15px;
+}
+
+.footer-contact-info  p {
+  font-size: 14px;
+}
+
+.footer-contact-info  i {
+  margin-right: 25px;
+}
+/* Footer get App */

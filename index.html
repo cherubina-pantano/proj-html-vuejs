@@ -336,16 +336,81 @@
             </div>
             <span class="small">Cras porttitor pellentesque sem eu pretium.</span>
           </div>
+          <!-- Section6: Foto -->
+
 
 
         </section>
 
       </main>
-
-
-      <!-- Section6: Foto -->
-
       <!-- Footer -->
+      <footer class="main-footer ">
+        <div class="footer-container d-flex">
+          <div class="footer-logo">
+            <img src="./Images_Food/avada-food-logo-mob.png" alt="">
+            <div class="footer-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+
+          </div>
+          <div class="footer-nav">
+            <ul class="foo-nav">
+              <li v-for="mainNav_item in mainNav" class="">
+                <a href="#">
+                  {{mainNav_item}}
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h5 class="footer-title">
+              Contact
+            </h5>
+            <div class="footer-contact-info">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>
+                775 New York Ave, Brooklyn, Kings, New York 11203
+              </p>
+            </div>
+            <div class="footer-contact-info">
+              <i class="fas fa-phone"></i>
+              <p>
+                + 0100-505-0000
+              </p>
+            </div>
+            <div class="footer-contact-info">
+              <i class="fas fa-envelope"></i>
+              <p>
+                info@your-domain.com
+              </p>
+            </div>
+            </div>
+          <div class="footer-getapp">
+            <h5 class="footer-title">
+              Get our App!
+            </h5>
+            <img src="./Images_Food/download-android-200x66.png" alt="">
+            <img src="./Images_Food/download-app-store-200x66.png" alt="">
+          </div>
+
+        </div>
+
+
+      </footer>
+
+
+
       <!-- Copyright -->
 
     </div>
@@ -358,7 +423,7 @@
 
 
     <!-- JS -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-  <script src="./js/main.js" charset="utf-8"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <script src="./js/main.js" charset="utf-8"></script>
   </body>
 </html>
