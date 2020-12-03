@@ -262,27 +262,66 @@
                   @click="showPostPopularOrRecent('recent')">
                   Recent
                 </button>
+              </div>
+              <div class="filtered-posts d-flex">
+                <ul class="filtered-post-list d-flex">
+                  <li v-for="popularBlogPost in postPopularOrRecent">
+                    <a href="#" class="d-flex">
+                      <div class="blogPost-Image">
+                        <img :src="popularBlogPost.path_66x66" alt="">
+                      </div>
+                      <div class="blogPost-title">
+                        <h5>{{popularBlogPost.title}}</h5>
+                        <p>{{popularBlogPost.data}}</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tweets-post">
+                <div class="tweets-post-header d-flex">
+                  <div class="tweets-post-header-sx d-flex">
+                    <h3>Tweets</h3>
+                    <p>by <a href="#">@Theme_Fusion</a></p>
+                  </div>
+                  <img src="./Images_Food/image.svg" alt="">
                 </div>
-                <div class="filtered-posts d-flex">
-                  <ul class="filtered-post-list d-flex">
-                    <li v-for="popularBlogPost in postPopularOrRecent">
-                      <a href="#" class="d-flex">
-                        <div class="blogPost-Image">
-                          <img :src="popularBlogPost.path_66x66" alt="">
-                        </div>
-                        <div class="blogPost-title">
-                          <h5>{{popularBlogPost.title}}</h5>
-                          <p>{{popularBlogPost.data}}</p>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
+                <div class="tweets-post-body d-flex">
+                  <div class="tweets-post-body-top d-flex">
+                    <img class="d-flex themeLogo"src="./Images_Food/3a74ce3d0532b7773b174c45ca3bd05a_normal.png" alt="">
+
+                    <div class="tweets-post-body-bottom d-flex">
+                      <div class="tweets-post-body-top-sx">
+                        <h5>Theme_Fusion</h5>
+                        <a href="#">@Theme_Fusion</a>
+                      </div>
+                      <p>Do you need sublime WordPress hosting for your next website?
+                        Take advantage of exclusive partner offers that we have secured
+                        just for you, & launch your site in seconds with <span>#avada</span>
+                        on WP Engine hosting & get 30% Off Black Friday
+                        <a href="#">bit.ly/3kjLLE2</a> <span>#BlackFriday2020</span>
+                      </p>
+                      <img class="theme-image"src="./Images_Food/En2TRxLW4AEiWUN.jpeg" alt="">
+                      <div class="theme-icons">
+                        <img class=""src="./Images_Food/image (2).svg">
+                        <img class=""src="./Images_Food/image (3).svg">
+        
+                      </div>
+
+
+                    </div>
+                    <img class="d-flex tweet"src="./Images_Food/image (1).svg" alt="">
+                  </div>
+
+
+
+
+
 
                 </div>
 
 
-
-
+              </div>
 
             </div>
           </div>

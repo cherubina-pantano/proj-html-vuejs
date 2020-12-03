@@ -696,3 +696,81 @@ main {
   margin: 5px 0;
   font-size: 12px;
 }
+
+/* Tweets post */
+.tweets-post {
+  margin-left: 20px;
+  /* border: 1px solid gray; */
+  background: #fff;
+  border-radius: 5px;
+}
+
+.tweets-post-header {
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.tweets-post-header-sx h3 {
+  font-size: 24px;
+  padding: 10px;
+  color: #6a6b6c;
+}
+
+.tweets-post-header-sx a,
+.tweets-post-body-bottom a,
+.tweets-post-body-bottom span {
+    color: #0492ad;
+}
+
+.tweets-post-header-sx p {
+  padding-top: 10px;
+  font-size: 12px;
+  align-self: center;
+}
+
+.tweets-post-body {
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.tweets-post-body-top-sx h5 {
+  font-size: 16px;
+  color: #6a6b6c;
+}
+
+.tweets-post-body-top-sx a {
+  font-size: 14px;
+}
+
+.tweets-post-body-bottom p {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 25px;
+}
+
+.tweets-post-body-top .themeLogo {
+  width: 40px;
+  max-height: 35px;
+  /* margin-left: 10px; */
+}
+
+.tweets-post-body-top .tweet{
+  width: 20px;
+  height: 20px;
+  /* margin-right: 15px; */
+}
+
+.tweets-post-body-bottom {
+  flex-direction: column;
+  padding-left: 8px;
+}
+
+.tweets-post-body-bottom .theme-image {
+  margin-top: 25px;
+  border-radius: 5px;
+}
+
+.theme-icons img {
+  margin: 10px 10px 5px 0px;
+  width: 18px;
+}

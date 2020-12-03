@@ -103,48 +103,48 @@ const app = new Vue({
     activePopularOrRecent: 'popular',
     tableBlogPosts: [
       {
-        path: './Images_Food/Yogurt-Nan-800x527.jpg',
-        title: 'Food Corner: Top Japanese Restaurants for Sushi',
-        author: 'admin',
-        data: 'March 25th, 2019',
-        link:'#'
-      },
-      {
-        path: './Images_Food/Yogurt-Nan-800x527.jpg',
+        path: './Images_Food/fi-roundup-800x527.jpg',
         title: 'Roundup: My New Favourite Recipes For Healthy Living',
         author: 'admin',
         data: 'March 25th, 2019',
         link:'#'
       },
       {
-        path: './Images_Food/Yogurt-Nan-800x527.jpg',
-        title: 'Why These Toasts with Tea are My New Favorite',
-        author: 'admin',
-        data: 'March 25th, 2019',
-        link:'#'
-      },
-      {
-        path: './Images_Food/Yogurt-Nan-800x527.jpg',
+        path: './Images_Food/fi-korean-food-800x527.jpg',
         title: 'Food Corner: Top Japanese Restaurants for Sushi',
         author: 'admin',
         data: 'March 25th, 2019',
         link:'#'
       },
       {
-        path: './Images_Food/Yogurt-Nan-800x527.jpg',
+        path: './Images_Food/fi-toasts-800x527.jpg',
+        title: 'Why These Toasts with Tea are My New Favorite',
+        author: 'admin',
+        data: 'March 25th, 2019',
+        link:'#'
+      },
+      {
+        path: './Images_Food/fi-street-food-800x527.jpg',
+        title: 'Food Corner: Top Japanese Restaurants for Sushi',
+        author: 'admin',
+        data: 'March 25th, 2019',
+        link:'#'
+      },
+      {
+        path: './Images_Food/fi-organic-breakfast-800x527.jpg',
         title: 'Roundup: My New Favourite Recipes For Healthy Living',
         author: 'admin',
         data: 'March 25th, 2019',
         link:'#'
       },
       {
-        path: './Images_Food/Yogurt-Nan-800x527.jpg',
+        path: './Images_Food/fi-water-side-rest-800x527.jpg',
         title: 'Why These Toasts with Tea are My New Favorite',
         author: 'admin',
         data: 'March 25th, 2019',
         link:'#'
       },
-      
+
     ],
   },
 
@@ -162,6 +162,8 @@ const app = new Vue({
       this.postPopularOrRecent = this.lastBlogPosts;
       this.activePopularOrRecent = 'recent';
     }
+
+  
 
   }, // fine methods
 });
